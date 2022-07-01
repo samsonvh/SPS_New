@@ -1,0 +1,32 @@
+#header {
+    display: none;
+}
+
+@media screen and (min-width: 1000px),
+screen and (min-width: 700px) and (max-width: 1000px) and (orientation: landscape) {
+    #header {
+        display: block;
+        background-color: antiquewhite;
+        font-size: 2vh;
+        letter-spacing: 1px;
+    }
+
+    #brand {
+        float: left;
+        margin-top: 4vh;
+        margin-left: 4vw;
+        width: fit-content;
+    }
+
+    #header nav {
+        float: right;
+        margin-top: 4vh;
+        margin-right: 4vw;
+        width: fit-content;
+    }
+
+    #header a {
+        display: inline-block;
+        margin-right: 2vw;
+    }
+}

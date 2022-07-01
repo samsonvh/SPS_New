@@ -1,0 +1,122 @@
+#station {
+    margin-bottom: 2vh;
+}
+
+#station .heading-section {
+    margin-bottom: 2vh;
+    height: fit-content;
+}
+
+#show-change-container {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+}
+
+#select-container {
+    margin: 0 auto;
+    padding: 0.5vh;
+    position: relative;
+    width: fit-content;
+    border-bottom: 1px solid #000;
+    border-radius: 8px;
+}
+
+#select-span {
+    padding: 0 12px;
+}
+
+#drop-down-station {
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 2vh;
+    height: 0;
+    display: block;
+    box-shadow: 0 2px 2px #ccc;
+    background-color: #fff;
+    overflow-y: scroll;
+    transition: 0.5s;
+}
+
+#drop-down-station li {
+    list-style-type: none;
+}   
+
+@media screen and (max-width: 1000px) {
+    #select-container {
+        font-size: 2vw;
+    }
+
+    #select-button {
+        display: inline-block;
+        padding: 0 8px;
+        font-size: 3vw;
+    }
+
+    #station-show-container {
+        margin: auto;
+        width: 95%;
+        aspect-ratio: 16/9;
+        background-color: antiquewhite;
+    }
+
+    @media screen and (max-height: 500px) {
+        #station-show-container {
+            margin: auto;
+            height: 75vh;
+            width: 133vh;
+            background-color: antiquewhite;
+        }
+    }
+
+    #drop-down-station li {
+        padding: 4px 24px;
+        font-size: 2vw;
+    }
+
+    @media screen and (max-height: 500px) {
+        #select-container {
+            font-size: 3vh;
+        }
+
+        #drop-down-station li {
+            padding: 4px 24px;
+            font-size: 2vh;
+        }#select-button {
+            display: inline-block;
+            padding: 0 8px;
+            font-size: 3vh;
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 1000px) {
+    #select-container {
+        font-size: 2vh;
+    }
+
+    #select-button {
+        display: inline-block;
+        height: 3vh;
+        padding: 0 4px;
+        font-size: 2vh;
+        vertical-align: bottom;
+    }
+
+    #station-show-container {
+        margin: auto;
+        width: 70%;
+        aspect-ratio: 16/9;
+        background-color: antiquewhite;
+    }
+
+    #drop-down-station li {
+        padding: 4px 12px;
+        font-size: 1.5vh;
+    }
+}

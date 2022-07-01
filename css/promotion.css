@@ -1,0 +1,62 @@
+#promotion {
+    margin-bottom: 4vh;
+}
+
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+    #promotion .content-section {
+        margin: auto;
+        width: 70%;
+    }
+
+    .promotion-container {
+        margin-bottom: 3vh;
+        width: 80%;
+    }
+
+    .center-promotion {
+        margin-right: 0;
+        margin-left: 20%;
+        text-align: right;
+    }
+
+    .promotion-content,
+    .promotion-title {
+        font-size: 3vw;
+    }
+
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape),
+screen and (min-width: 1000px) {
+
+    .left-promotion {
+        position: absolute;
+        left: 13%;
+        width: 20%;
+    }
+
+    .center-promotion {
+        margin: 0 auto;
+        width: 20%;
+    }
+
+    .right-promotion {
+        position: absolute;
+        top: 0;
+        right: 13%;
+        width: 20%;
+    }
+
+    .promotion-content,
+    .promotion-title {
+        font-size: 2vh;
+    }
+
+    @media screen and (max-height: 500px) {
+
+        .promotion-content,
+        .promotion-title {
+            font-size: 2.5vh;
+        }
+    }
+}

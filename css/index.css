@@ -1,0 +1,90 @@
+:root {
+    --color-orange: #f95f22;
+}
+
+@font-face {
+    font-family: Calistoga;
+    src: url(../assets/Calistoga-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lobster;
+    src: url(../assets/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lemonada;
+    src: url(../assets/Lemonada-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: Lemonada;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+#body>div {
+    scroll-snap-align: start;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading-section {
+    position: relative;
+    height: 10vh;
+    text-align: center;
+}
+
+.content-section {
+    position: relative;
+}
+
+.triangle {
+    width: 100vw;
+    height: 15vh;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-bottom: 15vh solid var(--color-orange);
+}
+
+.triangle-upsidedown {
+    width: 100vw;
+    height: 15vh;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-top: 15vh solid var(--color-orange);
+}
+
+.circle {
+    display: inline-block;
+    margin: 0 8px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.current-circle {
+    background-color: aqua;
+}
+
+.opacity-80 {
+    opacity: 0.8;
+}
+
+.letter-spacing-1{
+    letter-spacing: 1px;
+}
+.word-spacing-4 {
+    word-spacing: 2px;
+    line-height: 1.6;
+}
